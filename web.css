@@ -1,0 +1,161 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(49, 28, 28);
+    color: white;
+
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-weight: 5rem;
+    font-size: 1.25rem;
+  }
+
+  .navbar-brand {
+    color: black;
+    font-size: 2rem;
+    font-family: gill sans, sans-serif;
+  }
+  .carousel-inner{
+    animation: carouselAnimation 2s ease-in-out ;
+    margin-bottom: 200px;
+  }
+  @keyframes carouselAnimation{
+    from{
+     opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+    
+  }
+  #about{
+    height: 120vh;
+    animation: about 1s ease-out forwards;
+    scroll-behavior: smooth;
+  }
+  @keyframes about{
+    from{
+      transform: translateY(50px);
+    }
+    to{
+      transform: translateX(0) ;
+    }
+  }
+
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: aliceblue;
+  }
+
+  .sections {
+    display: flex;
+    align-items: center;
+  }
+
+  .right {
+    margin: 100px 20px;
+    list-style: none;
+    font-size: 17px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .left {
+    margin: 100px 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .right li {
+    padding: 10px 0 0 5px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .right h1 {
+    margin-bottom: 55px;
+    font-size: 3rem;
+  }
+  /* .right li i{
+    
+  } */
+
+  .customers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.25px  black;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+   
+  }
+
+  #gallary {
+    margin: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .images {
+    flex-wrap: wrap;
+  }
+
+  .contact_us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  #contact_info {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    width: 60vh;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(185, 72, 91);
+  }
+
+  #contact_info li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  #contact_info h1 {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .msg {
+    display: flex;
+
+    height: 50vh;
+    width: 60vh;
+    background-color: transparent;
+    color: gray;
+  }
+  footer{
+
+    background-color: rgb(20, 18, 18);
+    height: 70vh;
+  }
+  footer p{
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
